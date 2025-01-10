@@ -1,0 +1,28 @@
+﻿@page
+@using Microsoft.Data.SqlClient
+
+
+@{
+    try
+    {
+        string id = Request.Query["id"];
+        string connectionString = "Data Source=DESKTOP-L3SMK21\\SQLEXPRESS;Initial Catalog=ASPDotNetCoreWebApp(RazorPages)CRUDDb;User ID=sa;Password=sasa@123;Trust Server Certificate=True";
+        using(SqlConnection connection = new SqlConnection(connectionString))
+        {
+            connection.Open();
+            string query = @"DELETE FROM clients WHERE id=@id";
+            using(SqlCommand cmd = new SqlCommand(query, connection))
+            {
+                cmd.Parameters.AddWithValue("@id", id);
+                cmd.ExecuteNonQuery();
+            }
+        }
+    }
+    catch(Exception ex)
+    {
+        Console.WriteLine("Exception : " + ex.Message);
+        return;
+    }
+
+    Response.Redirect("/Clients/Index");
+}

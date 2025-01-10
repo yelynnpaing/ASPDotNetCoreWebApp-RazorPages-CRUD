@@ -25,7 +25,7 @@ namespace ASPDotNetCoreWebApp_RazorPages_CRUD.Pages.Clients
                             while(reader.Read())
                             {
                                 ClientInfo clientInfo = new ClientInfo();
-                                clientInfo.id = reader.GetInt32(0);
+                                clientInfo.id = ""+reader.GetInt32(0);
                                 clientInfo.name = reader.GetString(1);
                                 clientInfo.email = reader.GetString(2);
                                 clientInfo.phone = reader.GetString(3);
@@ -46,7 +46,7 @@ namespace ASPDotNetCoreWebApp_RazorPages_CRUD.Pages.Clients
 
     public class ClientInfo
     {
-        public int id { get; set; }
+        public string id { get; set; }
         public string name { get; set; }
         public string email { get; set; }
         public string phone { get; set; }
