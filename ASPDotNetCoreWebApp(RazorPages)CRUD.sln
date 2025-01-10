@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPDotNetCoreWebApp(RazorPages)CRUD", "ASPDotNetCoreWebApp(RazorPages)CRUD\ASPDotNetCoreWebApp(RazorPages)CRUD.csproj", "{A10EEE90-315A-46C7-B9F6-1E667AF1E133}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASPDotNetCoreWebApp(RazorPages)CRUD", "ASPDotNetCoreWebApp(RazorPages)CRUD\ASPDotNetCoreWebApp(RazorPages)CRUD.csproj", "{A10EEE90-315A-46C7-B9F6-1E667AF1E133}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

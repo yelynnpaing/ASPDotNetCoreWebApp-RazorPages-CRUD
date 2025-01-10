@@ -7,4 +7,8 @@
     <RootNamespace>ASPDotNetCoreWebApp_RazorPages_CRUD</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.2" />
+  </ItemGroup>
+
 </Project>
